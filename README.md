@@ -36,13 +36,21 @@ BA000000 0000 => BA <core count> 0000 0000
 BA000000 0090 => BA <core count> 0000 0090
 
 2 Core	02
+
 4 Core	04
+
 6 Core	06
+
 8 Core	08
+
 12 Core	0C
+
 16 Core	10
+
 24 Core	18
+
 32 Core	20
+
 64 Core	40
 
 ## Misc
