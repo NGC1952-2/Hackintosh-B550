@@ -21,13 +21,13 @@ I highly recommend using Corpnewt's Propertree to edit your config.plist.
  - Set ResizeAppleGpuBars to -1 if your Motherboard does not support Resizable BAR 
  - If you have a Ryzen ThreadRipper CPU, enable Devirtualizemmio and follow [this guide](https://dortania.github.io/OpenCore-Install-Guide/extras/kaslr-fix.html).
  
-##Kernel
+## Kernel
 
 #### Add
 
 -- I used VoodooHDA instead of AppleALC, but if you are going to use AppleALC, put it on EFI/OC/Kexts and OC Snapshot.
 
-####Patch
+#### Patch
 
 -- Modify the Replace Value on 3 patches called algrey - Force cpuid_cores_per_package with the physical core count of your CPU in hexadecimal.
 
@@ -45,22 +45,22 @@ BA000000 0090 => BA <core count> 0000 0090
 32 Core	20
 64 Core	40
 
-##Misc
+## Misc
 
-####Security 
+#### Security 
  
 Set SecureBootModel to Default if you are not using NVIDIA Web Drivers
 
-##NVRAM
+## NVRAM
 
-####Add
+#### Add
 
-######7C436110-AB2A-4BBB-A880-FE41995C9F82
+###### 7C436110-AB2A-4BBB-A880-FE41995C9F82
 
 remove amfi_get_out_of_my_way=0x1 and ipc_control_port_options=0 if you don't need to disable AMFI.
 add alcid=1 if using AppleALC
 
-##PlatformInfo
+## PlatformInfo
 
 Generate an SMBIOS using Corpnewt's GenSMBIOS and copy the Vaules to config.plist. 
 
