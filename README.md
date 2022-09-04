@@ -37,6 +37,10 @@ BA000000 0000 => BA core count 0000 0000
 
 BA000000 0090 => BA core count 0000 0090
 
+for example, a 6-core CPU would be
+
+B8 06 0000 0000
+
 2 Core	02
 
 4 Core	04
