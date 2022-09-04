@@ -32,7 +32,9 @@ I highly recommend using Corpnewt's Propertree to edit your config.plist.
 -- Modify the Replace Value on 3 patches called algrey - Force cpuid_cores_per_package with the physical core count of your CPU in hexadecimal.
 
 B8000000 0000 => B8 <core count> 0000 0000
+
 BA000000 0000 => BA <core count> 0000 0000
+
 BA000000 0090 => BA <core count> 0000 0090
 
 2 Core	02
